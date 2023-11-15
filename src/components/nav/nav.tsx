@@ -9,7 +9,7 @@ function Nav({ }: Props) {
     const [toggle, setToggle] = useState(true)
     return (
         <nav className='flex justify-between items-center rounded-full bg-primary-100 max-w-screen-2xl w-full px-4 py-3 pe-7 sm:pe-0 sm:py-0'>
-            <div className="logo p-3 rounded-full text-primary-100 bg-primary-200">AA</div>
+            <div className="logo p-3 rounded-full text-primary-100 bg-primary-300">AA</div>
             <ul className="menu sm:flex justify-center items-center gap-4 lg:gap-6 md:gap-5 text-base hidden">
                 <li>
                     <Link href="/">Home</Link>
@@ -26,7 +26,7 @@ function Nav({ }: Props) {
                 </li>
             </ul>
             <div className="contactBtn sm:inline-block hidden">
-                <button className="bg-primary-200 rounded-r-full p-5 text-base">
+                <button className="bg-primary-300 rounded-r-full p-5 text-base">
                     <Link href="/contact" className='text-primary-100'>Contact</Link>
                 </button>
             </div>

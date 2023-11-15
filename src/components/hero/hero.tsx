@@ -6,12 +6,8 @@ import { hero_img } from "../../assets/index"
 import Selection from '../ui/selection/selection'
 import { continents, priceRange, propertyTypes } from '@/assets/data'
 
-type Props = {}
 
-const Hero = (props: Props) => {
-    // const [type, setType] = useState("")
-    // const [priceRange, setPriceRange] = useState("")
-    // const [continent, setContinent] = useState("")
+const Hero = () => {
     return (
         <div className="relative hero  w-full md:px-5 pt-[200px]">
             <div className="text-primary-200 px-5 relative max-w-screen-2xl grid">
@@ -36,47 +32,12 @@ const Hero = (props: Props) => {
                     </div>
                     <Image src={hero_img} alt='hero_img' className='rounded-xl lg:col-span-3 col-span-4 w-full h-full max-h-96' />
                 </div>
-                {/* <div className="relative search bg-white max-w-full rounded-md w-full flex items-center justify-center transform -translate-y-8">
-                    <div className="input_cont flex p-5 gap-8 w-4/5 rounded-full justify-center bg-primary-110 shadow-lg shadow-gray-500">
-                        <div className="flex items-center p-2 px-5 bg-primary-100">
-                            <p>Img</p>
-                            <select onChange={(e) => setType(e.target.value)}>
-                                <option disabled>Select type</option>
-                                <option value="bench">Beach</option>
-                                <option value="mountain">Mountain</option>
-                                <option value="village">Village</option>
-                            </select>
-                        </div>
-                        <div className="flex items-center p-2 px-5 bg-primary-100">
-                            <p>Img</p>
-                            <select onChange={(e) => setPriceRange(e.target.value)}>
-                                <option disabled>Select Price Range</option>
-                                <option value="0">0-100,000</option>
-                                <option value="1">100,000-200,000</option>
-                                <option value="2">200,000-300,000</option>
-                                <option value="3">300-400,000</option>
-                                <option value="4">400,000-500,000</option>
-                            </select>
-                        </div>
-                        <div className="flex items-center p-2 px-5 bg-primary-100">
-                            <p>Img</p>
-                            <select onChange={(e) => setContinent(e.target.value)}>
-                                <option disabled>Select Continent</option>
-                                <option value="0">Europe</option>
-                                <option value="1">Asia</option>
-                                <option value="2">Africa</option>
-                                <option value="3">South America</option>
-                                <option value="4">North America</option>
-                                <option value="5">Oceania</option>
-                            </select>
-                        </div>
-                    </div>
-                </div> */}
                 <div className="selection_cont max-w-[90%] w-full grid grid-cols-1 sm:grid-cols-2 rounded-3xl md:flex flex-wrap gap-5 justify-center items-center bg-primary-110 md:rounded-full p-8 py-5 transform -translate-y-8 justify-self-center shadow-[0_7px_20px_-13px_rgba(128,128,128,1)]">
                     <Selection data={continents} title="Continent" />
                     <Selection data={priceRange} title="Price" />
                     <Selection data={propertyTypes} title="Property-Type" />
                 </div>
+
             </div>
         </div>
     )
