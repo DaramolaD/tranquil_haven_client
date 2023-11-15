@@ -68,16 +68,16 @@ function classNames(...classes: any) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Selection({data}: any) {
-    const [selected, setSelected] = useState(data[3])
+export default function Selection({data, title}: any) {
+    const [selected, setSelected] = useState(data[0])
 
     return (
         <Listbox value={selected} onChange={setSelected}>
             {({ open }) => (
                 <>
-                    <Listbox.Label className="block text-sm font-medium leading-6 text-gray-900">Continent</Listbox.Label>
-                    <div className="relative mt-2">
-                        <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                    <Listbox.Label className="block text-sm font-medium leading-6 text-gray-900">{title}</Listbox.Label>
+                    <div className="relative">
+                        <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-[#050F27] focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6">
                             <span className="flex items-center">
                                 <span className="ml-3 block truncate">{selected.item}</span>
                             </span>
@@ -93,7 +93,7 @@ export default function Selection({data}: any) {
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                         >
-                            <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                            <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-primary-110 py-1 text-base shadow-lg ring-1 ring-[#050f2754] ring-[#050F27]-500/50 ring-opacity-5 focus:outline-none sm:text-sm">
                                 {data.map((data:any) => (
                                     <Listbox.Option
                                         key={data.id}
@@ -109,7 +109,7 @@ export default function Selection({data}: any) {
                                             <>
                                                 <div className="flex items-center">
                                                     <span
-                                                        className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                                                        className={classNames(selected ? 'font-semibold hover:text-primary-210' : 'font-normal hover:text-primary-210', 'ml-3 block truncate hover:text-primary-210')}
                                                     >
                                                         {data.item}
                                                     </span>

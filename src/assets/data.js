@@ -13,18 +13,14 @@ export const continents = [
     },
     {
         id: 4,
-        item: 'Europe',
-    },
-    {
-        id: 5,
         item: 'South America',
     },
     {
-        id: 6,
+        id: 5,
         item: 'North America',
     },
     {
-        id: 7,
+        id: 6,
         item: 'Oceania',
     },
 ]

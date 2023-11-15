@@ -13,8 +13,8 @@ const Hero = (props: Props) => {
     // const [priceRange, setPriceRange] = useState("")
     // const [continent, setContinent] = useState("")
     return (
-        <div className="relative hero  w-full md:px-5 pt-64">
-            <div className="text-primary-200 px-5 relative max-w-screen-2xl">
+        <div className="relative hero  w-full md:px-5 pt-[200px] sm:pt-[250px]">
+            <div className="text-primary-200 px-5 relative max-w-screen-2xl grid">
                 <div className="grid grid-cols-4 gap-y-12 gap-x-12 justify-items-stretch justify-between lg:gap-x-12">
                     <h1 className='xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-5xl font-extrabold lg:col-span-2 col-span-4'>
                         We craft the future dwelling
@@ -72,9 +72,11 @@ const Hero = (props: Props) => {
                         </div>
                     </div>
                 </div> */}
-                <Selection data={continents}/>
-                {/* <Selection data={priceRange}/> */}
-                {/* <Selection data={propertyTypes}/> */}
+                <div className="selection_cont max-w-[90%] w-full grid grid-cols-1 sm:grid-cols-2 rounded-3xl md:flex flex-wrap gap-5 justify-center items-center bg-primary-110 md:rounded-full p-8 py-5 transform -translate-y-8 justify-self-center shadow-[0_7px_20px_-13px_rgba(128,128,128,1)]">
+                    <Selection data={continents} title="Continent" />
+                    <Selection data={priceRange} title="Price" />
+                    <Selection data={propertyTypes} title="Property-Type" />
+                </div>
             </div>
         </div>
     )

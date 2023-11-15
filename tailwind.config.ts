@@ -12,6 +12,7 @@ const config: Config = {
         100: '#F7F8F8',
         110: '#fff',
         200: '#050F27',
+        210: '#050f27a8',
       }
     },
     extend: {
