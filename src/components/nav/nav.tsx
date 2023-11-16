@@ -31,7 +31,7 @@ function Nav({ }: Props) {
                 </button>
             </div>
             <div className="sm:hidden inline-block w-9 h-9">
-                {toggle ? <FiMenu className="w-full h-full" /> : <FiX className="w-full h-full" />}
+                {toggle ? <FiMenu className="w-full h-full text-primary-300" /> : <FiX className="w-full h-full text-primary-300" />}
             </div>
         </nav>
     )

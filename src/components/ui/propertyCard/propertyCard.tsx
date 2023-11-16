@@ -12,7 +12,7 @@ function PropertyCard({ }: Props) {
     return (
         <div className='w-fit rounded-xl shadow-[0_7px_20px_-13px_rgba(128,128,128,1)]'>
             <Image src={hero_img} alt="property_img" className="rounded-t-xl" />
-            <div className="content px-3 py-5 grid gap-3">
+            <div className="content px-6 py-5 grid gap-3">
                 <h4 className='text-text-100'>The Most Luxury House</h4>
                 <div className="icon_cont flex items-center gap-2">
                     <CiLocationOn />
@@ -28,7 +28,7 @@ function PropertyCard({ }: Props) {
                         <span>2</span>
                     </div>
                 </div>
-                <div className="flex items-center justify-between price_cont border-solid border-spacing-y-5 mt-2 pt-5 border-t-[1px] border-y-border-100">
+                <div className="flex items-center justify-between price_cont border-solid border-spacing-y-5 mt-2 pt-5 pb-5 border-t-[1px] border-y-border-100">
                     <p className='price text-primary-300 text-[14px]'>$860,500</p>
                     <Button_3 text="View" />
                 </div>

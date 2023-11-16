@@ -10,7 +10,7 @@ function Property_list({ }: Props) {
   return (
     <div className="w-full px-5 md:px-10 pt-[50px] grid max-w-screen-2xl">
       <Heading text="Popular Property Deals" />
-      <div className="property_cont grid grid-cols-4 gap-y-12 gap-x-12 mb-12">
+      <div className="property_cont grid xl:grid-cols-4 gap-y-12 gap-x-12 justify-items-center mb-12 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
         <PropertyCard />
         <PropertyCard />
         <PropertyCard />
