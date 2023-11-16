@@ -1,6 +1,7 @@
 import Property_list from '@/components/property_list/property_list'
 import Hero from '@/components/hero/hero'
 import Nav from '@/components/nav/nav'
+import About from '@/components/about/about'
 import Image from 'next/image'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center justify-center w-full">
         <Hero />
         <Property_list />
+        <About />
       </main>
       <footer></footer>
     </>
