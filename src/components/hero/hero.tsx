@@ -19,14 +19,14 @@ const Hero = () => {
                         <div className="grid grid-cols-2 gap-3 gap-x-6">
                             <h3>Capital <br /> raised</h3>
                             <h3>Properties <br /> owned</h3>
-                            <h4 className='text-2xl font-bold'>$3.5M+</h4>
-                            <h4 className='text-2xl font-bold'>5k+</h4>
+                            <h4 className='text-2xl font-bold text-primary-300'>$3.5M+</h4>
+                            <h4 className='text-2xl font-bold text-primary-300'>5k+</h4>
                         </div>
 
-                        <p>Welcome to Tranquil Haven, California's No. 1 real estate choice. Beyond transactions, we're devoted to crafting your dream, future home, reflecting your unique vision and aspirations</p>
+                        <p>Welcome to Tranquil Haven, California&apos;s No. 1 real estate choice. Beyond transactions, we&apos;re devoted to crafting your dream, future home, reflecting your unique vision and aspirations</p>
                     </div>
                     <div className="hero_testi lg:col-span-1 sm:col-span-2 col-span-4 lg:self-initial self-center">
-                        <p className="pb-10">Join 120+ delighted clients who have found their sanctuary. Choose excellence; don't settle. Ready to discover you? Connect with us today.</p>
+                        <p className="pb-10">Join 120+ delighted clients who have found their sanctuary. Choose excellence; don&apos;t settle. Ready to discover you? Connect with us today.</p>
                         <Button text="Contact Us" />
                     </div>
                     <Image src={hero_img} alt='hero_img' className='rounded-xl lg:col-span-3 col-span-4 w-full h-full max-h-96' />
