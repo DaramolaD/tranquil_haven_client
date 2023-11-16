@@ -7,7 +7,7 @@ type Props = {
 
 const Button_2 = ({text}: Props) => {
   return (
-    <button className='rounded-xl w-fit p-3 bg-primary-300 capitalize text-primary-100 flex items-center gap-3'>
+    <button className='rounded-[50px] w-fit p-3 px-[15px] bg-primary-300 capitalize text-primary-100 flex items-center gap-3'>
       {text} <IoChevronDownOutline />
       </button>
   )

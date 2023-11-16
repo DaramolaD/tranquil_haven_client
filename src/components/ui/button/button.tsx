@@ -6,7 +6,7 @@ type Props = {
 
 const Button = ({text}: Props) => {
   return (
-    <button className='rounded-xl w-fit p-3 bg-primary-300 capitalize text-primary-100'>
+    <button className='rounded-[50px] w-fit p-3 bg-primary-300 capitalize text-primary-100 '>
       {text}
       </button>
   )

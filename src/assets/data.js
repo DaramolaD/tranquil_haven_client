@@ -1,37 +1,37 @@
-export const continents = [
+export const locations = [
     {
         id: 1,
-        item: 'Europe',
+        item: 'Rancho Palos Verdes, CA',
     },
     {
         id: 2,
-        item: 'Asia',
+        item: 'Saint Petersburg',
     },
     {
         id: 3,
-        item: 'Africa',
+        item: 'Malibu, CA',
     },
     {
         id: 4,
-        item: 'South America',
+        item: 'Europe',
     },
     {
         id: 5,
-        item: 'North America',
+        item: 'Holmes Beach, FL',
     },
     {
         id: 6,
-        item: 'Oceania',
+        item: 'Manhasset,NY',
     },
 ]
 export const priceRange = [
     {
         id: 1,
-        item: '0-100,000',
+        item: '400,000-500,000',
     },
     {
         id: 2,
-        item: '100,000-200,000',
+        item: '300,000-400,000',
     },
     {
         id: 3,
@@ -39,17 +39,31 @@ export const priceRange = [
     },
     {
         id: 4,
-        item: '300-400,000',
+        item: '100,000-200,000',
     },
     {
         id: 5,
-        item: '400,000-500,000',
+        item: '0-100,000',
     }
 ]
 export const propertyTypes = [
     {
         id: 1,
-        item: 'Beach',
+        item: 'Development',
+    },
+    {
+        id: 2,
+        item: 'Home',
+    },
+    {
+        id: 3,
+        item: 'Lands',
+    },
+]
+export const lifetyle = [
+    {
+        id: 1,
+        item: 'Equestrian',
     },
     {
         id: 2,
@@ -57,6 +71,18 @@ export const propertyTypes = [
     },
     {
         id: 3,
-        item: 'Village',
+        item: 'Resort',
+    },
+    {
+        id: 3,
+        item: 'Historic',
+    },
+    {
+        id: 3,
+        item: 'Urban',
+    },
+    {
+        id: 3,
+        item: 'Land',
     },
 ]
