@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 import Button_3 from '../button/button_3'
 import { hero_img } from '@/assets'
@@ -6,12 +6,15 @@ import { GiBathtub } from 'react-icons/gi'
 import { IoBedOutline } from 'react-icons/io5'
 import { CiLocationOn } from 'react-icons/ci'
 
-type Props = {}
+type Props = {
+    img: StaticImageData
+}
 
-function PropertyCard({ }: Props) {
+function PropertyCard({img}: Props) {
+    
     return (
-        <div className='w-fit rounded-xl shadow-[0_7px_20px_-13px_rgba(128,128,128,1)]'>
-            <Image src={hero_img} alt="property_img" className="rounded-t-xl" />
+        <div className='w-fit rounded-xl shadow-[0_7px_20px_-13px_rgba(128,128,128,1)] h-full pb-3 sm:pb-0'>
+            <Image src={img} alt="property_img" className="rounded-t-xl max-h-[250px] min-h-[190px] h-[50%]" sizes='100vw'/>
             <div className="content px-6 py-5 grid gap-3">
                 <h4 className='text-text-100'>The Most Luxury House</h4>
                 <div className="icon_cont flex items-center gap-2">

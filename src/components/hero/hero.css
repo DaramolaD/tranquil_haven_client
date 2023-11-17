@@ -1,0 +1,12 @@
+.avatar img:nth-child(2) {
+    left: 38px;
+    position: absolute;
+}
+.avatar img:nth-child(3){
+    left: 70px;
+    position: absolute;
+}
+.avatar img:nth-child(4){
+    left: 100px;
+    position: absolute;
+}
